@@ -14,3 +14,5 @@ The application is designed to improve productivity by providing an easy way to 
 📋 View All Tasks
 🔎 Simple and Clean User Interface
 📱 Responsive Design
+
+Netlify link: https://tudu-app1.netlify.app/
