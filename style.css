@@ -1,0 +1,106 @@
+:root {
+  --primary: #00d4ff;
+  --dark: #0f172a;
+  --card-bg: #1e2937;
+}
+
+body {
+  background: var(--dark);
+  color: #e2e8f0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* Login */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0F172A; /* slightly richer dark */
+}
+
+.login-card {
+  background: #1E293B;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 360px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05); /* subtle glass effect */
+}
+
+.login-header {
+  background: linear-gradient(135deg, #06B6D4, #3B82F6); /* smoother gradient */
+  color: white;
+  text-align: center;
+  padding: 2.2rem 1.8rem;
+}
+
+.login-body {
+  padding: 2rem;
+}
+
+.login-card input.form-control {
+  background: #1e2937;
+  border: 1px solid #475569;
+  color: #E2E8F0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+}
+
+.login-card input::placeholder {
+  color: #94A3B8;
+}
+
+.login-card input:focus {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+  background: #1E293B;
+}
+
+/* App Styles */
+.add-task-card {
+  background: var(--card-bg);
+  padding: 1.8rem;
+  border-radius: 16px;
+  border: 1px solid #334155;
+}
+
+.add-task-card input,
+.add-task-card textarea {
+  background: #334155;
+  border: 1px solid #475569;
+  color: white;
+  border-radius: 12px;
+}
+
+.task-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 1px solid #334155;
+  transition: all 0.3s ease;
+  color: #ffff;
+}
+
+.task-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.task-complete {
+  opacity: 1;
+  color: #94A3B8;
+  text-decoration  : line-through;
+}
+
+.empty-state {
+  padding: 5rem 2rem;
+  color: #94a3b8;
+}
+
+/* Profile Image Styling */
+#modalProfileImg {
+  box-shadow: 0 0 0 6px rgba(0, 212, 255, 0.15);
+}
